@@ -6,7 +6,8 @@ Central configuration repository governing automated dependency updates, supply-
 
 ## Architecture Overview
 
-Instead of managing update policies per project, every client repository inherits its patching rules from this single repository via `renovate.json`
+1. Install the [Renovate GitHub App](https://github.com/apps/renovate) on the repository (or the whole organisation).
+2. Instead of managing update policies per project, every client repository inherits its patching rules from this single repository via `renovate.json`
 To link any new client repository to this central rulebook, add `renovate.json` to the root of the client project:
 
 ```json
